@@ -11,34 +11,36 @@ const delayClasses = [
 
 const projects = [
   {
-    title: "Tensile Roofing Project",
-    image:
-      "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?w=600&q=80",
+    title: "Tensile Membrane Canopy",
+    image: "/gallery/tensile-membrane-canopy.jpg",
   },
   {
-    title: "Commercial Shed",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+    title: "Tensile Walkway Canopy",
+    image: "/gallery/tensile-walkway-canopy.jpg",
   },
   {
-    title: "Industrial Roofing",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
+    title: "PUF Roofing Structure",
+    image: "/gallery/puf-roof-rooftop-structure.jpg",
   },
   {
-    title: "Residential Roofing",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    title: "UPVC Roof",
+    image: "/gallery/upvc-roof.png",
   },
   {
-    title: "Structural Fabrication",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    title: "Stone-Coated Gable Roof",
+    image: "/gallery/stonecoated-roof-gable.jpg",
   },
   {
-    title: "Warehouse Construction",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+    title: "Pergola with Retractable Canopy",
+    image: "/gallery/pergola-retractable-canopy.jpg",
+  },
+  {
+    title: "Stonecoated Roof — Residential",
+    image: "/gallery/stonecoated-roof-residential.jpg",
+  },
+  {
+    title: "Stonecoated Roof — Detail",
+    image: "/gallery/stonecoated-roof-detail.jpg",
   },
 ];
 
@@ -59,16 +61,14 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {projects.map(({ title, image }, i) => (
             <div
               key={title}
-              className={`reveal ${delayClasses[i % 6]} group relative overflow-hidden rounded-sm aspect-[4/3] bg-steel-light`}
+              className={`reveal ${delayClasses[i % delayClasses.length]} group relative overflow-hidden rounded-sm aspect-[4/3] bg-steel-light`}
             >
               <img
                 src={image}
-                srcSet={`${image.replace("w=600", "w=400")} 400w, ${image} 600w, ${image.replace("w=600", "w=900")} 900w`}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 alt={title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"

@@ -16,10 +16,10 @@ import { submitEnquiry } from "../utils/submitEnquiry";
 const serviceOptions = [
   "Tensile Roofing",
   "General Roofing Works",
-  "Structural Fabrication",
-  "Residential Construction",
-  "Commercial Construction",
-  "Renovation & Finishing Works",
+  "Polycarbonate Roofing",
+  "Stonecoated Roof",
+  "UPVC Roof",
+  "PUF Roof",
   "Other",
 ];
 

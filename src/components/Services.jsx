@@ -1,10 +1,10 @@
 import {
   Tent,
   Home,
-  Wrench,
-  Building,
-  Building2,
-  Paintbrush,
+  Layers,
+  Shield,
+  Box,
+  Package,
 } from "lucide-react";
 
 const delayClasses = [
@@ -30,28 +30,28 @@ const services = [
       "Complete roofing solutions including sheet roofing, waterproofing, and repairs.",
   },
   {
-    icon: Wrench,
-    title: "Structural Fabrication",
+    icon: Layers,
+    title: "Polycarbonate Roofing",
     description:
-      "Custom steel and metal fabrication for sheds, frames, and industrial structures.",
+      "Lightweight, UV-resistant polycarbonate sheets for skylights, carports, and covered walkways.",
   },
   {
-    icon: Building,
-    title: "Residential Construction",
+    icon: Shield,
+    title: "Stonecoated Roof",
     description:
-      "End-to-end home construction with quality materials and expert finishing.",
+      "Durable stone-coated metal tiles combining classic looks with long-lasting weather protection.",
   },
   {
-    icon: Building2,
-    title: "Commercial Construction",
+    icon: Box,
+    title: "UPVC Roof",
     description:
-      "Warehouses, shops, and commercial buildings built to spec and on schedule.",
+      "Corrosion-free UPVC roofing ideal for industrial sheds, warehouses, and commercial structures.",
   },
   {
-    icon: Paintbrush,
-    title: "Renovation & Finishing",
+    icon: Package,
+    title: "PUF Roof",
     description:
-      "Interior and exterior renovation with flawless finishing touches.",
+      "Insulated PUF panel roofing for thermal efficiency, strength, and quick installation.",
   },
 ];
 
